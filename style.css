@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 23.33%;
+    width: 50vw;
+    text-align: left;
+}
+
+.container {
+    text-align: center;
+}
+
+#submit,
+textarea {
+    width: 80%;
+    margin-left: 10%;
+}

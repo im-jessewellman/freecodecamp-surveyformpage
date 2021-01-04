@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Description of survey.</p>
+
+        <form id="survey-form">
+
+            <label for="name" id="name-label"> Name:</label> <input type="text" placeholder="Enter your name" id="name"
+                required>
+            </br>
+            <label for="email" id="email-label"> Email: </label><input type="email" placeholder="Enter your email"
+                id="email" required>
+            </br>
+            <label for="number" id="number-label"> Age: </label><input type="number" id="number" min="18" max="100"
+                placeholder="18+">
+            </br>
+            </br></br>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            </br></br>
+
+            <label>Please select your visit:</label>
+            <div>
+                <input type="radio" name="visit" value="Drive Thru">
+                <label>
+                    Drive Thru
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="visit" value="Curbside">
+                <label>
+                    Curbside
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="visit" value="Dine In">
+                <label>
+                    Dine In
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="visit" value="Carry Out">
+                <label>
+                    Carry Out
+                </label>
+            </div>
+            </br></br>
+            </br>
+            <label>How did you place your order?</label>
+            <div>
+                <input type="radio" name="order" value="In Store">
+                <label>
+                    In Store
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="order" value="Online">
+                <label>
+                    Online
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="order" value="Phone">
+                <label>
+                    Phone
+                </label>
+            </div>
+            </br>
+            </br></br>
+
+            <label>Please rate your overall satisfaction with your experience.</label>
+            <div>
+                <input type="radio" name="overall" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="overall" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="overall" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="overall" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="overall" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+            <label>Please rate your satisfaction with: speed of service.</label>
+            <div>
+                <input type="radio" name="speed" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="speed" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="speed" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="speed" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="speed" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+            <label>Please rate your satisfaction with: friendliness of the crew.</label>
+            <div>
+                <input type="radio" name="friendliness" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="friendliness" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="friendliness" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="friendliness" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="friendliness" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+            <label>Please rate your satisfaction with: cleanliness of the
+                restuarant.</label>
+            <div>
+                <input type="radio" name="clean" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="clean" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="clean" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="clean" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="clean" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+            <label>Please rate your satisfaction with: tempature of your food.</label>
+            <div>
+                <input type="radio" name="tempature" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="tempature" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="tempature" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="tempature" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="tempature" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+            <label>Please rate your satisfaction with: quality of your food.</label>
+            <div>
+                <input type="radio" name="quality" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="quality" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="quality" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="quality" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="quality" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div></br>
+            </br></br>
+
+            <label>Please rate your satisfaction with: taste of your food.</label>
+            <div>
+                <input type="radio" name="taste" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="taste" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="taste" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="taste" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="taste" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div>
+
+            </br></br>
+
+            </br>
+            <label>Please rate your satisfaction with: ease of placing your order.</label>
+            <div>
+                <input type="radio" name="ease" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="ease" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="ease" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="ease" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="ease" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div>
+
+
+            </br></br>
+
+            </br>
+            <label>Please rate your satisfaction with: accuracy of your order.</label>
+            <div>
+                <input type="radio" name="accuracy" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="accuracy" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="accuracy" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="accuracy" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="accuracy" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div>
+
+
+            </br></br>
+
+            </br>
+            <label>Please rate your satisfaction with: overall
+                value for the price you paid.</label>
+            <div>
+                <input type="radio" name="price" value=" Highly Satisfied">
+                <label>
+                    Highly Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="price" value="Satisfied">
+                <label>
+                    Satisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="price" value="Neither Satisfied nor Dissatisfied">
+                <label>
+                    Neither Satisfied nor Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="price" value="Dissatisfied">
+                <label>
+                    Dissatisfied
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="price" value="Highly Dissatisfied">
+                <label>
+                    Highly Dissatisfied
+                </label>
+            </div>
+
+
+
+
+            </br></br>
+            </br>
+
+            <label>What items did you order? (Select all that apply.)</label>
+            <div>
+                <input type="checkbox" value="Big Mac"><label>Big Mac</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="Whopper"><label>Whopper</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="Dave's Double"><label>Dave's Double</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="Hot Premium Coffee"><label>Hot Premium Coffee</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="Fries"><label>Fries</label>
+
+            </div>
+            <div>
+                <input type="checkbox" value="Ice Cream Cone"><label>Ice Cream Cone</label>
+
+            </div>
+            </br></br>
+            </br>
+            <label>Did you experience a problem during your visit?</label>
+            <div>
+                <input type="radio" name="problem" value="Yes">
+                <label>
+                    Yes
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="problem" value="No">
+                <label>
+                    No
+                </label>
+            </div>
+            </br>
+            </br></br>
+            </br>
+            <label>What is the likelihood that you willl... Recommend this place to others in the next 30days? Return to
+                this location in the next 30days?</label>
+            <div>
+                <input type="radio" name="30days" value="Yes">
+                <label>
+                    Yes
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="30days" value="No">
+                <label>
+                    No
+                </label>
+            </div>
+
+            </br>
+            </br></br>
+            <div>
+                <label>Please share with us, in three or more sentences why you were satisfied with your experience with
+                    your location.</label></br>
+                <textarea></textarea>
+
+            </div>
+
+            </br>
+            <div>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
